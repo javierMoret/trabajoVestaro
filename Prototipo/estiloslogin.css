@@ -4,17 +4,18 @@
     --color-barra: #A581CA;
     --color-separacion-inputs: #A581CA;
     --color-icons: #7D4BAF;
+    --color-placeholder: #7D4BAF80;
     --fuente-main: 'Comfortaa', cursive;
 }
 /* Para cambiar la fuente de los placeholder */
 *::-webkit-input-placeholder {
     /* Google Chrome y Safari */
-    color: var(--color-icons);
+    color: var(--color-placeholder);
     font-family: var(--fuente-main);
 }
 *:-moz-placeholder {
     /* Firefox anterior a 19 */
-    color: var(--color-icons);
+    color: var(--color-placeholder);
     font-family: var(--fuente-main);
 }
 
