@@ -50,10 +50,6 @@ p {
     letter-spacing: 0.2px;
 }
 
-.btn-success:focus {
-  background-color: #000;
-  border-color: transparent;
-}
 
 
 html{
@@ -85,20 +81,13 @@ a:hover, a:active, a:focus {
   box-sizing: border-box;
 }
 
-#about, 
-#gallery,
-#contact,
-#blog, 
-#blog-single-post {
+#about {
   padding-top: 60px;
   padding-bottom: 80px;
 }
 
-.main-about,
-.main-single-post,
-.main-gallery,
-.main-contact {
-  height: 65vh;
+.main-about{
+  height: 60vh;
 }
 
 .overlay {
@@ -135,26 +124,7 @@ a:hover, a:active, a:focus {
   background: none repeat scroll 0 0 #ffffff;
 }
 
-.sk-spinner-wordpress.sk-spinner {
-  background-color: #bfba55;
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
-  position: relative;
-  -webkit-animation: sk-innerCircle 1s linear infinite;
-  animation: sk-innerCircle 1s linear infinite; 
-}
 
-.sk-spinner-wordpress .sk-inner-circle {
-  display: block;
-  background-color: #ffffff;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  border-radius: 8px;
-  top: 5px;
-  left: 5px; 
-}
 
 @-webkit-keyframes sk-innerCircle {
   0% {
@@ -264,37 +234,6 @@ a:hover, a:active, a:focus {
   top: 0;
   left: 0;
 }
-
-#home h4 {
-  color: #bfba55;
-}
-
-#home .btn {
-  background: #ffffff;
-  border: 2px solid #ffffff;
-  border-radius: 100px;
-  color: #444;
-  font-family: 'Merriweather', serif;
-  font-size: 10px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  padding: 13px 22px;
-  margin-top: 42px;
-  transition: all 0.4s ease-in-out;
-}
-
-#home .btn:hover {
-  background: transparent;
-  border-color: #ffffff;
-  color: #ffffff;
-}
-
-
-
-/*---------------------------------------
-   About section              
------------------------------------------*/
 
 #about .col-md-6 {
   padding-top: 22px;
@@ -494,6 +433,86 @@ a:hover, a:active, a:focus {
   .social-icon li a:hover {
     background: var(--color-icons);
     color: #ffffff;
+  }
+
+    /*---------------------------------------
+      MENU              
+  -----------------------------------------*/
+
+  .custom-navbar {
+    background: #ffffff;
+    border-top: 5px solid var(--color-icons);
+    border-bottom: 0;
+    -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .custom-navbar .navbar-brand {
+    color: #454545;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+
+  .custom-navbar .navbar-nav.navbar-nav-first {
+    margin-left: 8em;
+  }
+
+  .custom-navbar .navbar-nav.navbar-right li a {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .custom-navbar .navbar-nav.navbar-right li a .fa {
+    background: #29ca8e;
+    border-radius: 100%;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .custom-navbar .nav li a {
+    line-height: 40px;
+    color: #575757;
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+
+  .custom-navbar .navbar-nav > li > a:hover,
+  .custom-navbar .navbar-nav > li > a:focus {
+    background-color: transparent;
+  }
+
+  .custom-navbar .nav li a:hover {
+    background-color: var(--color-icons);
+    color: #ffffff;
+  }
+
+  .custom-navbar .nav li.active > a {
+    background-color: var(--color-icons);
+    color: #ffffff;
+  }
+
+  .custom-navbar .navbar-toggle {
+    border: none;
+    padding-top: 10px;
+  }
+
+  .custom-navbar .navbar-toggle {
+    background-color: transparent;
+  }
+
+  .custom-navbar .navbar-toggle .icon-bar {
+    background: #252525;
+    border-color: transparent;
   }
 
 
