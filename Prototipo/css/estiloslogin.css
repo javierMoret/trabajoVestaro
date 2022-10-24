@@ -106,8 +106,25 @@ body{
 }
 .checkbox-rect label{
     color: var(--color-icons);
-    font-size: 1.1em;
+    font-size: 1em;
     font-family: var(--fuente-main);
+}
+.forgotpassword{
+    transition: all 0.4s;
+    padding: 1.5%;
+    border-radius: 20px;
+    border: 2px solid transparent;
+}
+.forgotpassword:hover{
+    background-color: var(--color-barra);
+    transition: all 0.4s;
+    padding: 1.5%;
+    border-radius: 20px;
+    border: 2px solid var(--color-icons);
+}
+.forgotpassword:hover label{
+    transition: all 0.4s;
+    color: white;
 }
 .checkbox-rect input[type="checkbox"] {
     display: none;
