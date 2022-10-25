@@ -6,7 +6,7 @@ function irContactos(){
     username = username.replace(/\s+/g, '')
     console.log(password);
     if(password=="1234" && (username=="javiermoret" || username=="albertofernandez")){
-        window.location.href = "contactos.html";
+        window.location.href = "catalogo.html";
     }else{
         alert("Usuario o contraseña no válido.");
     }
