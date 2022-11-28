@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración - Vestaro</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/estilosHome.css">
+    <link href="css/estilosCatalogo.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/63e77c34c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilosAdmin.css">
+
+    <link rel="shortcut icon"
+        href="https://www.zarla.com/images/zarla-v-1x1-2400x2400-20211125-gkwgc8dwwxjv8q49cvbg.png?crop=1:1,smart&width=250&dpr=2"
+        type="image/x-icon">
+
+
+</head>
+
+<body>
+
+    <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+
+                <a href="#" class="navbar-brand">Vestaro</a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-nav-first">
+                    <li><a id="perfil" href="login.html" class="smoothScroll">Iniciar sesión</a></li>
+                    <li><a href="home.html" class="smoothScroll">Home</a></li>
+                    <li><a href="catalogo.html" class="smoothScroll">Catálogo</a></li>
+                    <li><a href="catalogo.html" class="smoothScroll">Administrar</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <div id="wrapper">
+        <table align='center' cellpadding=6 id="data_table" border=0>
+            <tr>
+                <th>NOMBRE</th>
+                <th>PRECIO</th>
+                <th>CANTIDAD</th>
+                <th>FECHA</th>
+                <th>ACCIONES</th>
+            </tr>
+
+            <tr id="row1">
+                <td id="nombre_row1">Hoodie rosa</td>
+                <td id="precio_row1">30</td>
+                <td id="cantidad_row1">31</td>
+                <td id="fecha_row1">2023-08-31</td>
+                <td class="acciones">
+                    <button class="edit" onclick="edit_row('1');" id="edit_button1"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="save" onclick="save_row('1');" id="save_button1"><i class="fa-solid fa-floppy-disk"></i></button>
+                    <button class="delete" onclick="delete_row('1');"><i class="fa-solid fa-trash"></i></button>
+                </td>
+            </tr>
+
+            <tr id="row2">
+                <td id="nombre_row2">Hoodie gris</td>
+                <td id="precio_row2">45</td>
+                <td id="cantidad_row2">29</td>
+                <td id="fecha_row2">2023-08-31</td>
+                <td class="acciones">
+                    <button class="edit" onclick="edit_row('2');" id="edit_button3"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="save" onclick="save_row('2');" id="save_button3"><i class="fa-solid fa-floppy-disk"></i></button>
+                    <button class="delete" onclick="delete_row('2');"><i class="fa-solid fa-trash"></i></button>
+                </td>
+            </tr>
+
+            <tr id="row3">
+                <td id="nombre_row3">Hoodie azul</td>
+                <td id="precio_row3">45</td>
+                <td id="cantidad_row3">22</td>
+                <td id="fecha_row3">2023-08-31</td>
+                <td class="acciones">
+                    <button class="edit" onclick="edit_row('3');" id="edit_button3"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="save" onclick="save_row('3');" id="save_button3"><i class="fa-solid fa-floppy-disk"></i></button>
+                    <button class="delete" onclick="delete_row('3');"><i class="fa-solid fa-trash"></i></button>
+                </td>
+            </tr>
+            <tr id="nuevos_campos">
+                <td><input type="text" id="nuevo_nombre"></td>
+                <td><input type="number" id="nuevo_precio"></td>
+                <td><input type="number" id="nueva_cantidad"></td>
+                <td><input type="date" id="nueva_fecha"></td>
+                <td><button class="add" onclick="add_row();"><i class="fa-solid fa-plus"></i></button></td>
+            </tr>
+
+        </table>
+    </div>
+
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2>¿Dónde nos encontramos?</h2>
+                        </div>
+                        <address>
+                            <p>C.C. Vialia, C/ Explanada De La Estacion, 29002 Málaga</p>
+                        </address>
+
+                        <ul class="social-icon">
+                            <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-instagram"></a></li>
+                        </ul>
+
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2022 Vestaro</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2>Información de contacto</h2>
+                        </div>
+                        <address>
+                            <p>+34 699 88 77 66</p>
+                            <p><a href="mailto:contacto@vestaro.com">contacto@vestaro.com</a></p>
+                        </address>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/appAdmin.js"></script>
+
+
+</body>
+
+</html>
