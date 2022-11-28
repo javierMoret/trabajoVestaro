@@ -38,7 +38,7 @@ function add_row() {
     var row = table.insertRow(table_len).outerHTML = "<tr id='row" + table_len + "'><td id='nombre_row" + table_len + "'>" +
         nuevo_nombre + "</td><td id='precio_row" + table_len + "'>" + nuevo_precio + "</td><td id='cantidad_row" + table_len + "'>" +
         nueva_cantidad + "</td><td id='fecha_row" + table_len + "'>" + nueva_fecha +
-        "</td><td class='acciones'><button class='edit' onclick='edit_row(" + table_len + ");' id='edit_button" + table_len + "'><i class='fa-solid fa-pen-to-square'></i></button> <button class='save' onclick='save_row(" + table_len + ");' id='save_button" + table_len + "'><i class='fa-solid fa-floppy-disk'></i></button> <button class='delete' onclick='delete_row(" + table_len + ");'><i class='fa-solid fa-trash'></i></button></td></tr>";
+        "</td><td class='acciones'><button class='edit' onclick='edit_row(" + table_len + ");' id='edit_button" + table_len+1 + "'><i class='fa-solid fa-pen-to-square'></i></button> <button class='save' onclick='save_row(" + table_len + ");' id='save_button" + table_len + "'><i class='fa-solid fa-floppy-disk'></i></button> <button class='delete' onclick='delete_row(" + table_len + ");'><i class='fa-solid fa-trash'></i></button></td></tr>";
     document.getElementById("nuevo_nombre").value = "";
     document.getElementById("nuevo_precio").value = "";
     document.getElementById("nueva_cantidad").value = "";
